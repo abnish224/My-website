@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abnish Kumar Thakur</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      margin: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4b6cb7, #182848);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+      text-align: center;
+      color: #182848;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #4b6cb7;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 20px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .glass-card:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background: #182848;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0d6efd;
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        transform: translateY(-40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Abnish Kumar Thakur</h1>
+    <p>Computer Science Student from Nepal</p>
+  </header>
+
+  <section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="glass-card">
+      <p>I am here to support your journey in IT by sharing my experience and knowledge. I'm a BSc CSIT student passionate about Artificial Intelligence, Software Development, and Cybersecurity. My dream is to earn a Master's from Stanford and contribute to innovation at Apple.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="glass-card">
+          <h5>🔐 Hacker-Themed Chat App</h5>
+          <p>Built with Flutter, login with codes, messaging via encrypted codes, and hacker-style UI.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="glass-card">
+          <h5>🎮 LAN Multiplayer Game</h5>
+          <p>Inspired by Mini Militia, created using Flutter with cool maps and local Wi-Fi gameplay.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="glass-card">
+          <h5>📅 Reminder System</h5>
+          <p>Code-based login system with alarms, to-dos, and notifications — all styled for hackers.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="glass-card">
+          <h5>🌐 This Website</h5>
+          <p>Personal portfolio designed with HTML, CSS, Bootstrap, and a touch of motion magic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="container">
+    <h2 class="section-title">Achievements</h2>
+    <div class="glass-card text-center">
+      <p>Currently building projects, preparing for Stanford & MEXT scholarships, and aiming to become a top AI engineer. Stay tuned for updates!</p>
+    </div>
+  </section>
+
+  <section id="cv" class="container">
+    <h2 class="section-title">Curriculum Vitae</h2>
+    <div class="glass-card">
+      <h5>Personal Information</h5>
+      <ul>
+        <li><strong>Full Name:</strong> Abnish Kumar Thakur</li>
+        <li><strong>Date of Birth:</strong> 7 November 2006</li>
+        <li><strong>Email:</strong> <a href="mailto:abnishthakur33@gmail.com">abnishthakur33@gmail.com</a></li>
+      </ul>
+      <h5>Education</h5>
+      <ul>
+        <li><strong>Class 10 (SLC/NEB):</strong> Passed with GPA 3.5</li>
+        <li><strong>Class 11 (Science):</strong> Passed with GPA 3.1</li>
+        <li><strong>Class 12 (Science):</strong> Results awaited</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="glass-card text-center">
+      <p>📧 Email: <a href="mailto:abnishthakur33@gmail.com">abnishthakur33@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Abnish Kumar Thakur • Built with 💻 Passion from Nepal</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
